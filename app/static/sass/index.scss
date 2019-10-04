@@ -1,0 +1,365 @@
+body,
+html {
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  background: #eee;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  // overflow-x: hidden;
+  // overflow-y: auto;
+}
+
+.wrapper {
+  height: auto;
+  min-height: 100%;
+  position: relative;
+  // overflow-x: hidden;
+  // overflow-y: auto;
+}
+
+// ===================头部样式===============
+.main-header {
+  position: relative;
+  max-height: 100px;
+  z-index: 1030;
+
+  .logo {
+    display: block;
+    float: left;
+    height: 50px;
+    font-size: 20px;
+    line-height: 50px;
+    text-align: center;
+    width: 230px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: 0 15px;
+    font-weight: 300;
+    overflow: hidden;
+    background-color: #367fa9;
+
+    span {
+      color: #fff;
+    }
+  }
+
+  .header-nav {
+    background-color: #3c8dbc;
+    margin-bottom: 0;
+    margin-left: 230px;
+    border: none;
+    min-height: 50px;
+    border-radius: 0;
+
+    .a-cai {
+      float: left;
+      background-color: transparent;
+      background-image: none;
+      padding: 15px 15px;
+
+      span {
+        color: #fff;
+        font-size: 12px;
+      }
+
+      &:hover {
+        background-color: #367fa9;
+      }
+    }
+
+    &-right {
+      float: right;
+
+      .header-list {
+        float: left;
+        margin: 0;
+
+        li:nth-of-type(1) {
+          float: left;
+
+          a {
+
+            line-height: 20px;
+            position: relative;
+            display: block;
+            padding: 15px 15px 14px;
+            text-decoration:none;
+
+            &:hover {
+              background-color: #367fa9;
+            }
+
+            span {
+              font-size: 12px;
+              color: #fff;
+            }
+          }
+        }
+
+        .header-messages {
+          position: relative;
+          float: left;
+
+          .a-mess {
+            display: block;
+            line-height: 20px;
+            padding: 14px 15px;
+
+            span {
+              color: #fff;
+            }
+
+            &:hover {
+              background-color: #367fa9;
+            }
+          }
+        }
+
+        .user{
+          position: relative;
+          float: left;
+          a{
+            position: relative;
+            display: block;
+            padding: 15px 15px;
+            line-height: 20px;
+            span{
+              color: #fff;
+              float: left;
+              margin-right: 10px;
+              font-size: 25px;
+            }
+            i{
+              color: #fff;
+            }
+            &:hover{
+              background-color: #367fa9;
+            }
+          }
+          .user-list{
+            display: none;
+            position: absolute;
+            width: 280px;
+            // height:231px;
+            background-color:#367fa9;
+            top:50px;
+            left: -193px;
+            z-index: 9999;
+            li:nth-of-type(1){
+              height: 175px;
+              // line-height: 175px;
+              padding: 10px;
+              width: 280px;
+              text-align: center;
+              float: none;
+              span{
+                color: #fff;
+                font-size: 90px;
+              }
+              p{
+                font-size: 20px;
+                color: #fff;
+                font-weight: border;
+              }
+            }
+            li:nth-of-type(2){
+              background-color: #f9f9f9;
+              padding: 10px;
+              width: 280px;
+              .pull-left{
+                float: left;
+              }
+              .pull-right{
+                float: right;
+              }
+              div{
+                float: left;
+                width: 95px;
+                height: 34px;
+                text-align: center;
+                border:1px solid #ddd;
+                line-height: 34px;
+                padding: 0;
+                a{
+                  color: #333;
+                  height: 34px;
+                  padding: 0;
+                  line-height: 34px;
+                  font-weight: bolder;
+                }
+              }
+            }
+          }
+        }
+        .user:hover .user-list{
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+//==============侧栏样式===============
+.main-aside{
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-top: 50px;
+  min-height: 100%;
+  width: 230px;
+  z-index: 810;
+  background-color: #222d32;
+
+  .sidebar{
+    padding-bottom: 10px;
+    // 侧栏用户
+    .user-panel{
+      white-space: nowrap;
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+      padding: 10px;
+      .push-image{
+        float: left;
+        span{
+          color:#fff;
+          font-size: 40px;
+        }
+      }
+      .push-info{
+        margin-left: 10px;
+        float: left;
+        p{
+          color: #fff;
+        }
+        p:nth-of-type(2){
+          i{
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: green;
+            margin-right: 5px;
+          }
+          a{
+            color: #fff;
+            text-decoration:none;
+          }
+        }
+      }
+    }
+  }
+  // =====侧栏目录=====
+  .sidebar-menu{
+    white-space: nowrap;
+    overflow: hidden;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    a{
+      padding: 12px 5px 12px 15px;
+      display: block;
+      text-decoration:none;
+    }
+    .side-show{
+      background: #1e282c !important;
+      color: #fff !important;
+    }
+    li{
+      background: #222D32;
+      color:#B8C7CE;
+    }
+    // .side-hover:hover{
+    //     background:#1e282c;
+    //     a{
+    //       text-decoration:none;
+    //       span{
+    //         color: #fff;
+    //       }
+    //       i{
+    //         color:#fff;
+    //       }
+    //     }
+    //   }
+    // }
+    //侧栏头部
+    .side-header{
+      padding: 10px 25px 10px 15px;
+      font-size: 12px;
+      color: #4b646f;
+      background-color: #1a2226;
+    }
+    //蓝线
+    .side-hover{
+      position: relative;
+      margin: 0;
+      padding: 0;
+      .line{
+        width: 3px;
+        position: absolute;
+        height: 100%;
+        background-color: #3c8dbc;
+        top: 0;
+        left: 0;
+      }
+      .line-no{
+        background-color: transparent;
+      }
+    }
+    // 侧栏仪表盘
+    .side-active{
+      position: relative;
+      margin: 0;
+      padding: 0;
+      span{
+        font-size:14px;
+        margin-right: 10px;
+      }
+    }
+    //侧栏点击出现
+    .side-tree{
+      position: relative;
+      margin: 0;
+      padding: 0;
+      .a-tree{
+        text-decoration:none;
+        color:#B8C7CE;
+        span{
+          font-size:14px;
+          margin-right: 10px;
+        }
+        u{
+          float: right;
+          font-size: 12px;
+          margin-top:2px;
+          transition:transform 0.5s;
+        }
+        .arrow2{
+          transform: rotate(-90deg);
+        }
+      }
+      .tree-menu{
+        display: none;
+        margin: 0 1px;
+        background: #2c3b41;
+        li{
+          a{
+            color:#8AA4AF;
+            span{
+              font-size: 14px;
+              margin-right: 10px;
+            }
+            &:hover{
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+
+  }
+}

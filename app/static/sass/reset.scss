@@ -6,8 +6,8 @@ body,h1,h2,h3,h4,h5,h6,p,ul,ol,dl,dd,input,textarea,fieldset,legend,option,th,td
 }
 /* 默认文本全部字体大小为12px 微软雅黑 #8c8c8c颜色 */
 body,html{
-	font:12px "微软雅黑",Arial;
-	/* color:#8c8c8c;	 */
+	font:14px "微软雅黑",Arial;
+	color:#fff;
 }
 /* h1,h2,h3,h4,h5,h6,b,strong宽度正常,大小和主体一样 */
 h1,h2,h3,h4,h5,h6,b,strong{
@@ -19,7 +19,14 @@ li{
 	list-style:none;	
 }
 /* 所有a标签没有下划线 */
-a,u{
+a,u,span,i{
+	text-decoration:none;	
+}
+a{
+	color: #fff;
+}
+a:hover{
+	color: #fff;
 	text-decoration:none;	
 }
 /* 清除input选中后蓝框 */
@@ -56,4 +63,7 @@ img{
 	width: 1206px;
 	margin: 0 auto;
 } */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+	display: block;
+}
 /* -----------------------网页开始 -----------------*/

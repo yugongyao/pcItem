@@ -1,22 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>PC</title>
-<link rel="stylesheet" href="../static/css/reset.css">
-<link rel="stylesheet" href="../static/css/bootstrap.min.css">
-<link rel="stylesheet" href="../static/css/index.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>PC</title>
+  <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../static/css/reset.css">
+  <link rel="stylesheet" href="../static/css/iconfont.css">
+  <link rel="stylesheet" href="../static/css/index.css">
 </head>
+
 <body>
-  <ul class="list"></ul>
+  <div class="wrapper">
+    <!-- ==============头部样式 ================-->
+    <div class="main-header">
+      <a href="#" class="logo">
+        <span class="iconfont icon-hello"></span>
+      </a>
+      <nav class="header-nav">
+        <a href="javascript：void(0)" class="a-cai"><span class="iconfont icon-menu-two"></span></a>
+        <div class="header-nav-right">
+          <ul class="header-list">
+            <li><a href="#"><span class="iconfont icon-tiaozhuan"></span></a></li>
+            <li class="header-messages">
+              <a href="javascript：void(0)" class="a-mess"><span class="iconfont icon-youxiang"></span></a>
+            </li>
+            <li class="user">
+              <a href="javascript：void(0)">
+                <span class="iconfont icon-G"></span>
+                <i>sun</i>
+              </a>
+              <ul class="user-list clearfix">
+                <li>
+                  <span class="iconfont icon-G"></span>
+                  <p>sun</p>
+                </li>
+                <li class="clearfix">
+                  <div class="pull-left"><a href="#">个人资料</a></div>
+                  <div class="pull-right"><a href="#">退出登录</a></div>
+                </li>
+
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <!-- ==============侧栏样式==================-->
+    <div class="main-aside">
+      <div class="sidebar">
+        <div class="user-panel clearfix">
+          <div class="push-image">
+            <span class="iconfont icon-G"></span>
+          </div>
+          <div class="push-info">
+            <p>sun</p>
+            <p><i></i><a href="#">个人资料</a></p>
+          </div>
+        </div>
+        <ul class="sidebar-menu">
+          <li class="side-header">MENUS</li>
+          <!-- 仪表盘 -->
+          <li class="side-active side-show side-hover">
+            <a href="javascript:void(0)">
+              <span class="iconfont icon-yibiao"></span>
+              <i>仪表盘</i>
+            </a>
+            <b class="line b-style"></b>
+          </li>
+          <!-- 文章 -->
+          <li class="side-tree side-hover">
+            <a href="javascript:void(0)" class="a-tree">
+              <span class="iconfont icon-wenzhang"></span>
+              <i>文章</i>
+              <u class="iconfont icon-xiangzuo arrow"></u>
+              <b class="b-style"></b>
+            </a>
+            <ul class="tree-menu">
+              <li>
+                <a href="#">
+                  <span class="iconfont icon-yuanhuan"></span>
+                  <i>所有文章</i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="iconfont icon-yuanhuan"></span>
+                  <i>写文章</i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="iconfont icon-yuanhuan"></span>
+                  <i>分类目录</i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="iconfont icon-yuanhuan"></span>
+                  <i>标签</i>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <!-- 页面 -->
+          <li class="side-tree side-hover">
+            <a href="javascript:void(0)" class="a-tree">
+              <span class="iconfont icon-diannao"></span>
+              <i>页面</i>
+              <u class="iconfont icon-xiangzuo arrow"></u>
+              <b class="b-style"></b>
+            </a>
+            <ul class="tree-menu">
+              <li>
+                <a href="#">
+                  <span class="iconfont icon-yuanhuan"></span>
+                  <i>所有页面</i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="iconfont icon-yuanhuan"></span>
+                  <i>新建页面</i>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <!-- 外观 -->
+          <li class="side-tree side-hover">
+            <a href="javascript:void(0)" class="a-tree">
+              <span class="iconfont icon-tupian-copy"></span>
+              <i>外观</i>
+              <u class="iconfont icon-xiangzuo arrow"></u>
+              <b class="b-style"></b>
+            </a>
+            <ul class="tree-menu">
+              <li>
+                <a href="#">
+                  <span class="iconfont icon-yuanhuan"></span>
+                  <i>主题</i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="iconfont icon-yuanhuan"></span>
+                  <i>菜单</i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="iconfont icon-yuanhuan"></span>
+                  <i>主体编辑</i>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <!-- 用户 -->
+          <li class="side-tree side-hover">
+            <a href="javascript:void(0)" class="a-tree">
+              <span class="iconfont icon-yonghu"></span>
+              <i>用户</i>
+              <u class="iconfont icon-xiangzuo arrow"></u>
+              <b class="b-style"></b>
+            </a>
+            <ul class="tree-menu">
+              <li>
+                <a href="#">
+                  <span class="iconfont icon-yuanhuan"></span>
+                  <i>个人资料</i>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <!-- 设置 -->
+          <li class="side-tree side-hover">
+            <a href="javascript:void(0)" class="a-tree">
+              <span class="iconfont icon-shezhi"></span>
+              <i>设置</i>
+              <u class="iconfont icon-xiangzuo arrow"></u>
+              <b class="b-style"></b>
+            </a>
+            <ul class="tree-menu">
+              <li>
+                <a href="#">
+                  <span class="iconfont icon-yuanhuan"></span>
+                  <i>博客设置</i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="iconfont icon-yuanhuan"></span>
+                  <i>博客备份</i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="iconfont icon-yuanhuan"></span>
+                  <i>小工具</i>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
 
   <script src="../static/scripts/jquery.min.js"></script>
   <script src="../static/scripts/bootstrap.min.js"></script>
   <script src="../static/scripts/home.js"></script>
-  <script src="../static/scripts/api.js"></script>
-  <script src="../static/scripts/main.js"></script>
+  <!-- <script src="../static/scripts/api.js"></script> -->
+  <!-- <script src="../static/scripts/main.js"></script> -->
 </body>
+
 </html>
