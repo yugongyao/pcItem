@@ -1,0 +1,38 @@
+// 内容头部
+.content-header {
+  .title {
+    p {
+      float: left;
+      line-height: 30px;
+      cursor: pointer;
+      color: #3C8DC9;
+    }
+
+    p:nth-of-type(even) {
+      margin: 0 5px;
+      color: #333;
+    }
+
+    .show {
+      color: #333;
+    }
+  }
+}
+
+// 内容展示样式
+.content-inner {
+  width: 100%;
+  .inner {
+    position: relative;
+    .table-inner {
+      background: #fff;
+      position: absolute;
+      top: 0;
+      left: 15px;
+      right: 15px;
+    }
+    .table-fade{
+      display: none;
+    }
+  }
+}
