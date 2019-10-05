@@ -123,7 +123,6 @@ body {
           position: relative;
           float: left;
           a{
-            position: relative;
             display: block;
             padding: 15px 15px;
             line-height: 20px;
@@ -147,7 +146,7 @@ body {
             // height:231px;
             background-color:#367fa9;
             top:50px;
-            left: -193px;
+            right: 0px;
             z-index: 9999;
             li:nth-of-type(1){
               height: 175px;
@@ -205,11 +204,8 @@ body {
 
 //==============侧栏样式===============
 .main-aside{
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding-top: 50px;
-  min-height: 100%;
+  float: left;
+  min-height:680px;
   width: 230px;
   z-index: 810;
   background-color: #222d32;
@@ -320,6 +316,20 @@ body {
         margin-right: 10px;
       }
     }
+    //其他
+    .side-other{
+      position: relative;
+      margin: 0;
+      padding: 0;
+      a{
+        color: #B8C7CE;
+        span{
+          font-size:14px;
+          margin-right: 10px;
+        }
+      }
+      
+    }
     //侧栏点击出现
     .side-tree{
       position: relative;
@@ -361,5 +371,38 @@ body {
       }
     }
 
+  }
+}
+//内容样式
+.main-content{
+  height: 629px;
+  min-height: 100%;
+  max-width:100%;
+  margin-left: 230px;
+  background: #8AA4AF;
+  .content-inner{
+    width:100%;
+    height: 100%;
+    background:#ECF0F5;
+  }
+}
+
+// 尾部样式
+.main-footer{
+  background: #fff;
+  padding: 15px;
+  color: #444;
+  border-top: 1px solid #d2d6de;
+  margin-left: 230px;
+  z-index: 820;
+  max-width: 100%;
+  height:51px;
+  .footer-inner{
+    .footer-right{
+      float: right;
+    }
+    a{
+      color: #3c8dbc;
+    }
   }
 }

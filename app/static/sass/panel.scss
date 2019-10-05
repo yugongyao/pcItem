@@ -1,0 +1,103 @@
+.content-chunk{
+  padding: 0 15px;
+  .chunk-style{
+    position: relative;
+    height: 150px;
+    .chunk-all{
+      .inner{
+        box-sizing: border-box;
+        padding: 10px;
+        width: 100%;
+        height: 80%;
+        h3{
+          font-size: 38px;
+          color: #ffffff;
+          font-weight: bolder;
+          margin-bottom: 15px;
+        }
+        p{
+          font-size: 16px;
+          color: #ffffff;
+          margin-bottom: 15px;
+        }
+      }
+      .chunk-a{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        a{
+          padding: 5px 0;
+          text-align: center;
+          display: block;
+          font-size: 16px;
+        }
+        i{
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          background-color: #000;
+          opacity: 0.1;
+          top: 0;
+          left: 0;
+          pointer-events:none;
+          transition: opacity 1s;
+        }
+        &:hover i{
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+  .chunk-article{
+    .article{
+      width: 100%;
+      height: 100%;
+      background: #00C0EF;
+      position: relative;
+    }
+  }
+  .chunk-comment{
+    .comment{
+      width: 100%;
+      height: 100%;
+      background: #00A65A;
+      position: relative;
+    }
+  }
+  .chunk-accessory{
+    .accessory{
+      width: 100%;
+      height: 100%;
+      background: #F39C12;
+      position: relative;
+    }
+  }
+  .chunk-day{
+    .day{
+      width: 100%;
+      height: 100%;
+      background: #DD4B39;
+      position: relative;
+    }
+  }
+}
+
+//内容显示
+.content-main{
+  margin-top:20px; 
+  .main-all{
+    .new-style{
+      padding: 0 15px;
+      background: #ffffff;
+      .new-title{
+        padding: 0 15px;
+        h4{
+          float: left;
+          font-size: 20px;
+          line-height: 40px;
+        }
+      }
+    }
+  }
+}
