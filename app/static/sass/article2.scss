@@ -1,0 +1,23 @@
+// 内容头部
+.content{
+  .text-area{
+    margin-top: 20px;
+  }
+}
+
+// 内容标签
+.label{
+  margin-top: 20px;
+  .label-inner{
+    h4{
+      color: #333;
+      font-size: 20px;
+      line-height: 40px;
+    }
+  }
+  .label-issue{
+    .btn{
+      width: 200px;
+    }
+  }
+}

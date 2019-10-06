@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>标签管理</title>
+  <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../static/css/reset.css">
+  <link rel="stylesheet" href="../static/css/iconfont.css">
+  <link rel="stylesheet" href="../static/css/contentHeader.css">
+  <link rel="stylesheet" href="../static/css/article4.css">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <!-- 头部通用 -->
+    <div class="row header">
+      <div class="col-md-1 page-name PR-no">标签</div>
+      <div class="col-md-1 page-show PRL-no">标签库</div>
+      <div class="col-md-3 page-catalogue">
+        <ul class="page-list">
+          <li><a href="#"><span class="iconfont icon-arr-right"></span>文章管理</a></li>
+          <li><a href="#"><span class="iconfont icon-arr-right"></span>标签</a></li>
+        </ul>
+        <div class="page-icon">
+          <a href="./index.html" class="page-icon-a"><span class="iconfont icon-yibiao icon-span"></span>首页</a>
+        </div>
+      </div>
+    </div>
+    <!-- 主体内容 -->
+    <div class="row content">
+      <!-- 左侧内容 -->
+      <div class="col-md-5">
+        <div class="content-left">
+          <h3>添加标签</h3>
+          <div class="left-inner">
+            <h4>名称:</h4>
+            <input type="text" class="form-control label-title" placeholder="标签名">
+            <h5>*页面上所显示的名称</h5>
+            <h4>路径名称:</h4>
+            <input type="text" class="form-control label-url" placeholder="路径名">
+            <h5>*这是文章路径上显示的名称，最好为英文</h5>
+          </div>
+          <p>
+              <button type="button" class="btn btn-primary btn-label">确认添加</button>
+          </p>
+        </div>
+      </div>
+      <!-- 右侧内容 -->
+      <div class="col-md-7">
+        <div class="content-right">
+          <h3>所有标签</h3>
+          <div class="right-inner">
+            <table class="table table-hover table-inner">
+              <tr>
+                <th>名称</th>
+                <th>路径</th>
+                <th>操作</th>
+              </tr>
+              <tr>
+                  <td>1</td>
+                  <td>测试用,无效</td>
+                  <td>
+                      <button type="button" class="btn btn-danger btn-xs">永久删除</button>
+                  </td>
+                </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+  <script src="../static/scripts/jquery.min.js"></script>
+  <script src="../static/scripts/bootstrap.min.js"></script>
+  <script src="../static/scripts/article4.js"></script>
+</body>
+
+</html>
