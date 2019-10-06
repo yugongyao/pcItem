@@ -61,7 +61,8 @@ $(function () {
 
     var arrVal = [articleVal, titleVal, labelText, classifyText,time];
     arr2.push(arrVal);
-    storage.set('article', arr2)
+    storage.set('article', arr2);
+    alert('成功发布'+titleVal);
   })
 
 })

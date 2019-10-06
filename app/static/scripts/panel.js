@@ -38,7 +38,7 @@ $(function(){
     getArticle.forEach(function (item, index, array) {
       var arrN = array[index];
       var $newTr = $('<tr class="new-tr"></tr>');
-      var innerVal = `<td>${arrN[0]}</td><td>已发布</td><td>${arrN[4]}</td>`;
+      var innerVal = `<td>${arrN[1]}</td><td>已发布</td><td>${arrN[4]}</td>`;
       $newArt.append($newTr);
       $newTr.html(innerVal);
     })

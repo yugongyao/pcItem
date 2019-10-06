@@ -45,28 +45,28 @@ $(function () {
   if (getArtDel) {
     var arr4 = getArtDel;
   } else {
-    var arr4 = [];
+    var arr4=[];
   }
 
   $.each($btnDel, function (index, value) {
 
-    // $btnDel.eq(index).click(function(){
-    //   // 删除tr
-    //   arr3.splice(index,1);
-    //   // var arrDel=arr3.splice(index,1);
-    //   storage.set('article', arr3);
-    //   // arr4.push(arrDel);
-    //   // storage.set('article-del', arr4);
-    //   location.reload();
-    // })
-    $allTd.eq(index).on('click', 'button', function () {
+    $btnDel.eq(index).click(function(){
       // 删除tr
       var arrDel = arr3.splice(index, 1);
       storage.set('article', arr3);
+      arr4 = arr4  || [];
       arr4.push(arrDel[0]);
       storage.set('article-del', arr4);
       location.reload();
     })
+    // $allTd.eq(index).on('click', 'button', function () {
+    //   // 删除tr
+    //   var arrDel = arr3.splice(index, 1);
+    //   storage.set('article', arr3);
+    //   arr4=arr4.push(arrDel[0]);
+    //   storage.set('article-del', arr4);
+    //   location.reload();
+    // })
   });
   // storage.remove('article-del');
   //============================回收站======================
@@ -76,7 +76,7 @@ $(function () {
   // 添加新列
   var getArticle = storage.get('article-del');
   var arr4=getArticle;
-  console.log(arr4);
+  // console.log(arr4);
     if (getArtDel) {
       getArtDel.forEach(function (item, index, array) {
         var arrIn2 = array[index];
@@ -89,8 +89,8 @@ $(function () {
     }
   var $btnBack=$('.btn-back');
   var $btnFor=$('.btn-forever');
-  console.log($btnBack);
-  console.log($btnFor);
+  // console.log($btnBack);
+  // console.log($btnFor);
   //永久删除
   $.each($btnFor, function (index, value) {
     $btnFor.eq(index).click(function(){
@@ -106,6 +106,7 @@ $(function () {
       // 还原
       var back=arr4.splice(index,1);
       storage.set('article-del', arr4);
+      arr3 = arr3  || [];
       arr3.push(back[0]);
       storage.set('article', arr3);
       location.reload();
